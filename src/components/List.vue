@@ -46,10 +46,10 @@
               v-clipboard:error="onError"
               @click="snackbar = true"
              >
-             <img src="/copyM.svg" alt="image" class="copy" :title="(isActive) ? 'Nusxa olish' : 'Нусха олиш'">
+             <img src="/copyM.svg" alt="image" class="copy" :title="(isActive) ? 'Нусха олиш' : 'Nusxa olish'">
              </div>
           <v-snackbar v-model="snackbar" right>
-            {{ (isActive) ? 'Matn nusxalandi !' : 'Матн нусхаланди !' }}
+            {{ (isActive) ? 'Матн нусхаланди !' : 'Matn nusxalandi !' }}
             <template v-slot:action="{ attrs }">
              <div
              color="pink"
