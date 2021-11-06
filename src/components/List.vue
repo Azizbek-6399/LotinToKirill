@@ -5,10 +5,10 @@
         <v-col md="5" sm="5" xs="5" class="border midCol">
           <v-row>
             <v-col md="3" sm="4" xs="5" class="px-0">
-              <v-btn class="btns" block tile @click="!isActive" :color="(isActive) ? 'primary' : ''" >Lotin</v-btn>
+              <v-btn class="btns" block tile @click="isActive = !isActive" :color="(isActive) ? 'primary' : ''" >Lotin</v-btn>
             </v-col>
             <v-col md="3" sm="4" xs="5" class="px-0">
-              <v-btn class="btns" block tile @click="!isActive"  :color="(isActive) ? '' : 'primary'">Kirill</v-btn>
+              <v-btn class="btns" block tile @click="isActive = !isActive"  :color="(isActive) ? '' : 'primary'">Kirill</v-btn>
             </v-col>
           </v-row>
         </v-col>
@@ -21,10 +21,10 @@
           <v-row>
             <v-col md="6" sm="4" xs="0" class="bcol"></v-col>
             <v-col md="3" sm="4" xs="6" class="px-0">
-              <v-btn class="btns" block tile @click="!isActive" :color="(isActive) ? '' : 'primary'">Lotin</v-btn>
+              <v-btn class="btns" block tile @click="isActive = !isActive" :color="(isActive) ? '' : 'primary'">Lotin</v-btn>
               </v-col>
             <v-col md="3" sm="4" xs="6" class="px-0">
-              <v-btn class="btns" block tile @click="!isActive" :color="(isActive) ? 'primary ' : ''">Kirill</v-btn>
+              <v-btn class="btns" block tile @click="isActive = !isActive" :color="(isActive) ? 'primary ' : ''">Kirill</v-btn>
               </v-col>
           </v-row>
         </v-col>
