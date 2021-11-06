@@ -310,8 +310,10 @@ export default {
     @media (max-width: 422px) {
       .poveredBy{
         bottom: -20px;
-        left: 27%;
-        transform: translate(0);
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
       }
       .textA{
         margin: 0 !important;
