@@ -175,6 +175,8 @@ export default {
             delivery += newArrStr[i].search(/[A-Z]/) !== -1 ? 'Ғ' : 'ғ'; i++ 
           } else if(/[E|e]/.test(newArrStr[i]) && newArrStr[i-1] !== ' ' && i !== 0){
             delivery += newArrStr[i].search(/[A-Z]/) !== -1 ? 'Е' : 'e';
+          } else if(['\'', '`', '’',  '‘'].includes(newArrStr[i])){
+            delivery += (newArrStr[i+1].search(/[A-Z]/) !== -1 ?? newArrStr[i-1].search(/[A-Z]/) !== -1) ? 'Ъ' : 'ъ'
           } else {
               delivery += newArrStr[i];
           }
